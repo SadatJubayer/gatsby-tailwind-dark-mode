@@ -4,22 +4,18 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ThemeToggler from "../components/ThemeToggler"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="max-w-5xl mx-auto">
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        width={300}
-        quality={95}
-        formats={["AUTO", "WEBP", "AVIF"]}
-        alt="A Gatsby astronaut"
-        style={{ marginBottom: `1.45rem` }}
-      />
+    <div className="flex justify-center items-center min-h-screen bg-teal-400 dark:bg-teal-800">
+      <h1 className="text-2xl text-gray-800 dark:text-red-100">
+        Tailwind + Dark Mode
+        <a href="https://www.smjubayer.me" target="_blank">
+          by - Sadat Jubayer
+        </a>
+      </h1>
     </div>
   </Layout>
 )

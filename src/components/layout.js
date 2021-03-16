@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div>
+    <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>{children}</main>
       <footer className="max-w-5xl mx-auto">
@@ -23,11 +23,8 @@ const Layout = ({ children }) => {
         {` `}
         <a href="https://www.gatsbyjs.com">Gatsby</a>
         <br />
-        <a href="https://www.gatsbyjs.com">
-          Tailwind + Darkmode by Sadat Jubayer
-        </a>
       </footer>
-    </div>
+    </>
   )
 }
 

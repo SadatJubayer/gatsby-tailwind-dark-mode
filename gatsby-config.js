@@ -5,6 +5,16 @@ module.exports = {
     author: `@SadatJubayer`,
   },
   plugins: [
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-use-dark-mode",
+      options: {
+        classNameDark: "dark",
+        classNameLight: "light",
+        storageKey: "darkMode",
+        minify: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -15,12 +25,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-use-dark-mode`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-postcss`,
-    {
-      resolve: "gatsby-plugin-use-dark-mode",
-    },
   ],
 }
